@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/note_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_label_note"
+        app:layout_constraintBottom_toBottomOf="@+id/input_note"
+        app:layout_constraintStart_toStartOf="@+id/address_label"
+        app:layout_constraintTop_toTopOf="@+id/input_note" />
+
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:ems="10"
+        android:hint="@string/intput_phone_hint"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/input_name"
+        app:layout_constraintTop_toBottomOf="@+id/input_name"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <Spinner
+        android:id="@+id/phone_type_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_margin"
+        android:accessibilityHeading="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/input_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_phone"
+        app:layout_constraintTop_toTopOf="@+id/input_phone"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/input_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:ems="10"
+        android:hint="@string/intput_address_hint"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_phone"
+        app:layout_constraintTop_toBottomOf="@+id/input_phone" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:ems="10"
+        android:hint="@string/intput_name_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/header_text"
+        app:layout_constraintTop_toBottomOf="@+id/header_text" />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_label_name"
+        app:layout_constraintBottom_toBottomOf="@+id/input_name"
+        app:layout_constraintStart_toStartOf="@+id/header_text"
+        app:layout_constraintTop_toTopOf="@+id/input_name" />
+
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_label_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/input_phone"
+        app:layout_constraintStart_toStartOf="@+id/name_label"
+        app:layout_constraintTop_toTopOf="@+id/input_phone" />
+
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_label_address"
+        app:layout_constraintBottom_toBottomOf="@+id/input_address"
+        app:layout_constraintStart_toStartOf="@+id/phone_label"
+        app:layout_constraintTop_toTopOf="@+id/input_address" />
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/order_header"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_note"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:ems="10"
+        android:hint="@string/intput_note_hint"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/input_address"
+        app:layout_constraintTop_toBottomOf="@+id/input_address" />
+
+    <TextView
+        android:id="@+id/delivery_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/order_label_delivery"
+        app:layout_constraintStart_toStartOf="@+id/note_label"
+        app:layout_constraintTop_toBottomOf="@+id/input_note" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/delivery_label"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_label">
+
+        <RadioButton
+            android:id="@+id/sameday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Same day messenger service" />
+
+        <RadioButton
+            android:id="@+id/nextday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next day ground delivery" />
+
+        <RadioButton
+            android:id="@+id/pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick up" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
