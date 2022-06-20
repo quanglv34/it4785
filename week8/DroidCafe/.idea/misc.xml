@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.1425" />
+        <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/drawable/ic_baseline_star_outline_24.xml" value="0.1425" />
         <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.313" />
+        <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/layout/activity_alert.xml" value="0.33" />
         <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/layout/activity_main.xml" value="0.33242753623188404" />
         <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/layout/activity_order.xml" value="0.33242753623188404" />
         <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/layout/fragment_date_picker.xml" value="0.21354166666666666" />
+        <entry key="..\:/hust/it4785/week8/DroidCafe/app/src/main/res/menu/menu_main.xml" value="0.3875" />
       </map>
     </option>
   </component>

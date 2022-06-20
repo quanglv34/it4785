@@ -1,7 +1,9 @@
 package com.example.droidcafe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +21,12 @@ public class OrderActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
+
+        //Get the intent and its data
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        TextView textView = findViewById(R.id.order_message);
+        textView.setText(message);
 
         RadioButton buttonSameDay = findViewById(R.id.sameday);
         buttonSameDay.setChecked(true);

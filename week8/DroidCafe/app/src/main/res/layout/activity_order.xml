@@ -7,6 +7,25 @@
     tools:context=".OrderActivity">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_message"
+        android:layout_marginStart="@dimen/default_margin"
+        app:layout_constraintStart_toEndOf="@+id/header_text"
+        app:layout_constraintTop_toTopOf="@+id/header_text"
+        />
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/order_header"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/note_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,17 +113,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/input_address"
         app:layout_constraintStart_toStartOf="@+id/phone_label"
         app:layout_constraintTop_toTopOf="@+id/input_address" />
-
-    <TextView
-        android:id="@+id/header_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_margin"
-        android:layout_marginTop="@dimen/default_margin"
-        android:text="@string/order_header"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/input_note"
