@@ -50,7 +50,7 @@ public class PageCollectionFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        pageAdapter = new PageAdapter(getSupportM);
+        pageAdapter = new PageAdapter(this.get);
         viewPager = view.findViewById(R.id.pager);
         viewPager.setAdapter(pageAdapter);
     }
